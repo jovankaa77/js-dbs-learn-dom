@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  width: 80%;
+  background-color: antiquewhite;
+  margin: 30px auto;
+  justify-content: space-around;
+}
+section {
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+}

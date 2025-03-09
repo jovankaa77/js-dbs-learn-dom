@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contoh {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body class="testa contoh">
+    <h1 class="container-satu">Jovanka</h1>
+    <p class="klik">Jovanka</p>
+  </body>
+</html>
+<script>
+  const container = document.querySelector(".container-satu");
+  //menambah kelas
+  container.classList.add("Example-1");
+  container.classList.add("example-2");
+  container.classList.add("change");
+  container.classList.add("menambah1");
+
+  //menghapus
+  container.classList.remove("change");
+  container.classList.remove("menambah1");
+
+  //Jika ada dihapus, jika tidak ada ditambah (Taruh di console)
+  document.body.classList.toggle("contohh");
+  container.classList.toggle("menambah1");
+
+  //mendapatkan class (urutan seperti array)
+  const get = container.classList.item(1);
+  const get2 = container.classList.item(3);
+  // console.log(get2);
+
+  //menanya apakah ada class di element tersebut?
+  //jika true berati ada
+  const ask = container.classList.contains("example-2");
+  const ask2 = container.classList.contains("menambah1");
+  console.log(ask2);
+
+  //replace => mengganti/menimpa
+  const replace = container.classList.replace("Example-1", "example-3");
+  const replace2 = container.classList.replace("menambah1", "menambah2");
+</script>

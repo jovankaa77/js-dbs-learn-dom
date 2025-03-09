@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="asas">Test</h1>
+    <script>
+      //setAtribut ini menimpa jadi kalau ada class sebelunya maka class tersebut hilang (menimpa)
+      //harus mencari class yang belum ada untuk menjadikan class baru (Not recomended but okey)
+      //href, name, change
+      //tampilkan atribut name
+      //hapus atribut
+      const test = document.querySelector(".asas");
+      test.setAttribute("href", "ini link");
+      test.setAttribute("name", "Jovan");
+      test.setAttribute("change", "ganti");
+
+      //mendapatkan atribut
+      const test1 = test.getAttribute("name");
+      console.log(test1);
+
+      //remove
+      test.removeAttribute("change");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+        margin: auto;
+      }
+      .merah {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+      .green {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+      }
+      .blue {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="merah"></div>
+    <br />
+    <input type="range" min="1" max="255" />
+
+    <div class="green"></div>
+    <br />
+    <input type="range" min="1" max="255" />
+
+    <div class="blue"></div>
+    <br />
+    <input type="range" min="1" max="255" />
+    <script>
+      const inp = document.querySelectorAll("input");
+      for (let i = 0; i < inp.length; i++) {
+        inp[i].addEventListener("input", function () {
+          const r = inp[0].value;
+          const g = inp[1].value;
+          const b = inp[2].value;
+          document.body.style.backgroundColor =
+            "rgb(" + r + "," + g + ", " + b + ")";
+        });
+      }
+    </script>
+  </body>
+</html>
